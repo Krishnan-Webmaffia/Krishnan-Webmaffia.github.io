@@ -45,11 +45,11 @@ body .main_page header .hdfc_menumob_Close {
 
 body .main_page header .hdfc_menu {
   display: inline-block;
-  background: #dddddd;
 }
 
 body .main_page header .hdfc_menu ul li {
   color: #3c87b7;
+  font-weight: lighter;
 }
 
 body .main_page header .hdfc_menu ul li:hover {
@@ -58,7 +58,7 @@ body .main_page header .hdfc_menu ul li:hover {
 
 body .main_page .hdfc_check_layout .hdfc_check_layout_poster h3 {
   color: white;
-  font-weight: normal;
+  font-weight: lighter;
 }
 
 body .main_page .hdfc_check_layout .hdfc_check_layout_details {
@@ -94,6 +94,15 @@ body .main_page .hdfc_check_layout .hdfc_check_layout_details ul li input[type=b
   background: #00aa89;
   text-decoration: none;
   border: none;
+  cursor: pointer;
+}
+
+body .main_page .hdfc_check_layout .hdfc_check_layout_details ul li input[type=button]:hover {
+  text-shadow: 1px 1px black;
+}
+
+body .main_page .hdfc_check_layout .hdfc_check_layout_details ul li input[type=checkbox] {
+  cursor: pointer;
 }
 
 body .main_page .hdfc_check_layout .hdfc_check_layout_details_terms {
@@ -102,7 +111,7 @@ body .main_page .hdfc_check_layout .hdfc_check_layout_details_terms {
 
 body .main_page .hdfc_credit_score h2 {
   color: #3c87b7;
-  font-weight: normal;
+  font-weight: lighter;
   text-align: center;
 }
 
@@ -119,7 +128,7 @@ body .main_page .hdfc_loans_special {
 body .main_page .hdfc_loans_special h2 {
   text-align: center;
   color: #3c87b7;
-  font-weight: normal;
+  font-weight: lighter;
 }
 
 body .main_page .hdfc_loans_special .hdfc_loans_special_features ul {
@@ -164,7 +173,7 @@ body .main_page .hdfc_loans_special .hdfc_loans_special_features ul li:last-chil
 body .main_page .hdfc_faqs h2 {
   text-align: center;
   color: #3c87b7;
-  font-weight: normal;
+  font-weight: lighter;
 }
 
 body .main_page .hdfc_faqs ul {
@@ -224,9 +233,9 @@ body .main_page .hdfc_faqs ul li p {
   text-align: center;
 }
 
-@media all and (min-width: 1366px) {
+@media all and (min-width: 1365px) {
   body {
-    margin: 7vh 0 0 0;
+    margin: 0 0 0 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 0;
@@ -234,75 +243,90 @@ body .main_page .hdfc_faqs ul li p {
   body .main_page {
     margin: 0;
     padding: 0;
+    width: 100%;
   }
   body .main_page header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
-    z-index: 10;
     width: 100%;
-    border-bottom: 1px solid #868585;
-    height: 7vh;
+    padding: 1% 20% 1% 20%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   body .main_page header .hdfc_logo {
-    display: inline-block;
     padding: 0;
+    margin: 0;
   }
   body .main_page header .hdfc_logo img {
     padding: 0;
+    margin: 0;
     display: block;
-    float: left;
-    height: 7vh;
+    width: 8.6vw;
+    height: auto;
   }
   body .main_page header .hdfc_menumob_Open {
-    display: inline-block;
-    padding: 1%;
-    right: 1vw;
-    font-size: 6vh;
-    line-height: 6vh;
-    height: 7vh;
-    position: absolute;
-    font-weight: bold;
+    display: none;
   }
   body .main_page header .hdfc_menumob_Close {
     display: none;
-    padding: 1%;
-    right: 1vw;
-    font-size: 7vh;
-    line-height: 5vh;
-    height: 7vh;
-    position: absolute;
-    font-weight: bold;
   }
   body .main_page header .hdfc_menu {
-    display: none;
-    position: absolute;
-    top: 7vh;
-    width: 100%;
     padding: 0;
     margin: 0;
+    width: 51vw;
+    position: relative;
   }
   body .main_page header .hdfc_menu ul {
-    margin: 0;
-    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
+    margin: 0;
+    padding: 0 6vw 0 6vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   body .main_page header .hdfc_menu ul li {
-    padding: 1% 2% 1% 2%;
     margin: 0;
-    height: 7vh;
-    line-height: 7vh;
     text-decoration: none;
-    display: block;
-    text-align: left;
-    border-bottom: 1px solid black;
-    font-size: 3vh;
+    text-align: center;
+    font-size: 2vw;
+    list-style: none;
+    padding: 0 2vw 0 2vw;
   }
   body .main_page .hdfc_check_layout {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
     background: #00aa89;
-    padding: 0 0 5vh 0;
+    padding: 1vh 5vw 1vh 16vw;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_poster {
     display: -webkit-box;
@@ -310,124 +334,133 @@ body .main_page .hdfc_faqs ul li p {
     display: flex;
     padding: 0;
     margin: 0;
-    width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_poster img {
-    height: 50vh;
-    margin-right: 2vw;
+    width: 11vw;
+    height: auto;
+    padding: 2vh 2vw 2vh 0;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_poster h3 {
+    width: 16vw;
     text-transform: uppercase;
-    font-size: 5vh;
-    padding: 1%;
+    font-size: 2.3vw;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_details {
     display: block;
     -webkit-box-shadow: 0px 0px 5px 8px rgba(0, 0, 0, 0.09);
             box-shadow: 0px 0px 5px 8px rgba(0, 0, 0, 0.09);
-    margin: 5%;
+    width: 46vw;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background: white;
     border-radius: 0.5%;
     position: relative;
+    bottom: -4vh;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_details ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 20% 2% 0 2%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 5% 3% 0 3%;
+    position: relative;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_details ul li {
-    margin: 0;
-    height: 9vh;
-    line-height: 9vh;
+    width: 30%;
+    margin: 5% 8% 5% 8%;
+    height: 2vh;
     text-decoration: none;
-    display: block;
-    font-size: 3vh;
+    font-size: 1.5vw;
     line-height: 4vh;
-    width: 75vw;
+    list-style: none;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_details ul li input[type=text] {
-    font-size: 3vh;
-    width: inherit;
+    font-size: 1.5vw;
+    line-height: 5vh;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_details ul li input[type=button] {
-    padding: 3%;
-    font-size: 3.2vh;
-    line-height: 4vh;
+    position: absolute;
+    padding: 2%;
+    font-size: 1.5vw;
     border-radius: 8%;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_details .hdfc_check_layout_details_mandatory {
     display: block;
-    text-align: left;
-    padding: 1% 1% 3% 6%;
-    font-size: 2.2vh;
+    text-align: right;
+    padding: 1% 26% 3% 1%;
+    font-size: 1vw;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_details .hdfc_check_layout_details_terms {
     display: block;
     position: absolute;
-    right: 3vw;
-    bottom: -8vh;
-    font-size: 2.2vh;
+    right: 0;
+    bottom: -6vh;
+    font-size: 1vw;
   }
   body .main_page .hdfc_credit_score {
     display: block;
-    padding: 2% 1% 2% 1%;
+    padding: 2% 20% 2% 20%;
   }
   body .main_page .hdfc_credit_score h2 {
-    font-size: 4vh;
+    font-size: 3vw;
   }
   body .main_page .hdfc_credit_score p {
-    padding: 1% 3% 2% 3%;
-    font-size: 2.5vh;
+    padding: 0 3% 2% 3%;
+    font-size: 1.1vw;
   }
   body .main_page .hdfc_loans_special {
-    padding: 3% 2% 3% 2%;
+    padding: 2% 20% 2% 20%;
   }
   body .main_page .hdfc_loans_special h2 {
-    font-size: 4vh;
+    font-size: 3vw;
+  }
+  body .main_page .hdfc_loans_special .hdfc_loans_special_features {
+    padding: 0 6% 0 6%;
   }
   body .main_page .hdfc_loans_special .hdfc_loans_special_features ul li h5 {
-    font-size: 2.5vh;
+    font-size: 1.2vw;
     padding: 0;
-    margin-bottom: 0;
+    margin: 2% 0 -1.5% 0;
   }
   body .main_page .hdfc_loans_special .hdfc_loans_special_features ul li p {
-    padding: 0 3% 0 3%;
-    font-size: 2.5vh;
+    padding: 0 7% 0 7%;
+    font-size: 1.2vw;
   }
   body .main_page .hdfc_faqs {
     display: block;
+    padding: 2% 23% 2% 23%;
   }
   body .main_page .hdfc_faqs h2 {
-    font-size: 4vh;
+    font-size: 3vw;
   }
   body .main_page .hdfc_faqs ul li div h4 {
-    font-size: 2.5vh;
+    font-size: 1.3vw;
     padding: 3%;
   }
   body .main_page .hdfc_faqs ul li div span {
     margin-left: 2vw;
     margin-right: 2vw;
-    font-size: 3.5vh;
+    font-size: 2vw;
   }
   body .main_page .hdfc_faqs ul li p {
     padding: 5% 2% 5% 2%;
   }
 }
 
-@media all and (max-width: 1366px) {
+@media all and (max-width: 1365px) {
   body {
-    margin: 7vh 0 0 0;
+    margin: 0 0 0 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 0;
@@ -435,75 +468,90 @@ body .main_page .hdfc_faqs ul li p {
   body .main_page {
     margin: 0;
     padding: 0;
+    width: 100%;
   }
   body .main_page header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
-    z-index: 10;
     width: 100%;
-    border-bottom: 1px solid #868585;
-    height: 7vh;
+    padding: 1% 20% 1% 20%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   body .main_page header .hdfc_logo {
-    display: inline-block;
     padding: 0;
+    margin: 0;
   }
   body .main_page header .hdfc_logo img {
     padding: 0;
+    margin: 0;
     display: block;
-    float: left;
-    height: 7vh;
+    width: 8.6vw;
+    height: auto;
   }
   body .main_page header .hdfc_menumob_Open {
-    display: inline-block;
-    padding: 1%;
-    right: 1vw;
-    font-size: 6vh;
-    line-height: 6vh;
-    height: 7vh;
-    position: absolute;
-    font-weight: bold;
+    display: none;
   }
   body .main_page header .hdfc_menumob_Close {
     display: none;
-    padding: 1%;
-    right: 1vw;
-    font-size: 7vh;
-    line-height: 5vh;
-    height: 7vh;
-    position: absolute;
-    font-weight: bold;
   }
   body .main_page header .hdfc_menu {
-    display: none;
-    position: absolute;
-    top: 7vh;
-    width: 100%;
     padding: 0;
     margin: 0;
+    width: 51vw;
+    position: relative;
   }
   body .main_page header .hdfc_menu ul {
-    margin: 0;
-    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
+    margin: 0;
+    padding: 0 6vw 0 6vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   body .main_page header .hdfc_menu ul li {
-    padding: 1% 2% 1% 2%;
     margin: 0;
-    height: 7vh;
-    line-height: 7vh;
     text-decoration: none;
-    display: block;
-    text-align: left;
-    border-bottom: 1px solid black;
-    font-size: 3vh;
+    text-align: center;
+    font-size: 2vw;
+    list-style: none;
+    padding: 0 2vw 0 2vw;
   }
   body .main_page .hdfc_check_layout {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
     background: #00aa89;
-    padding: 0 0 5vh 0;
+    padding: 1vh 5vw 1vh 16vw;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_poster {
     display: -webkit-box;
@@ -511,115 +559,124 @@ body .main_page .hdfc_faqs ul li p {
     display: flex;
     padding: 0;
     margin: 0;
-    width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_poster img {
-    height: 50vh;
-    margin-right: 2vw;
+    width: 11vw;
+    height: auto;
+    padding: 2vh 2vw 2vh 0;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_poster h3 {
+    width: 16vw;
     text-transform: uppercase;
-    font-size: 5vh;
-    padding: 1%;
+    font-size: 2.3vw;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_details {
     display: block;
     -webkit-box-shadow: 0px 0px 5px 8px rgba(0, 0, 0, 0.09);
             box-shadow: 0px 0px 5px 8px rgba(0, 0, 0, 0.09);
-    margin: 5%;
+    width: 46vw;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background: white;
     border-radius: 0.5%;
     position: relative;
+    bottom: -4vh;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_details ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 20% 2% 0 2%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 5% 3% 0 3%;
+    position: relative;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_details ul li {
-    margin: 0;
-    height: 9vh;
-    line-height: 9vh;
+    width: 30%;
+    margin: 5% 8% 5% 8%;
+    height: 2vh;
     text-decoration: none;
-    display: block;
-    font-size: 3vh;
+    font-size: 1.5vw;
     line-height: 4vh;
-    width: 75vw;
+    list-style: none;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_details ul li input[type=text] {
-    font-size: 3vh;
-    width: inherit;
+    font-size: 1.5vw;
+    line-height: 5vh;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_details ul li input[type=button] {
-    padding: 3%;
-    font-size: 3.2vh;
-    line-height: 4vh;
+    position: absolute;
+    padding: 2%;
+    font-size: 1.5vw;
     border-radius: 8%;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_details .hdfc_check_layout_details_mandatory {
     display: block;
-    text-align: left;
-    padding: 1% 1% 3% 6%;
-    font-size: 2.2vh;
+    text-align: right;
+    padding: 1% 26% 3% 1%;
+    font-size: 1vw;
   }
   body .main_page .hdfc_check_layout .hdfc_check_layout_details .hdfc_check_layout_details_terms {
     display: block;
     position: absolute;
-    right: 3vw;
-    bottom: -8vh;
-    font-size: 2.2vh;
+    right: 0;
+    bottom: -6vh;
+    font-size: 1vw;
   }
   body .main_page .hdfc_credit_score {
     display: block;
-    padding: 2% 1% 2% 1%;
+    padding: 2% 20% 2% 20%;
   }
   body .main_page .hdfc_credit_score h2 {
-    font-size: 4vh;
+    font-size: 3vw;
   }
   body .main_page .hdfc_credit_score p {
-    padding: 1% 3% 2% 3%;
-    font-size: 2.5vh;
+    padding: 0 3% 2% 3%;
+    font-size: 1.1vw;
   }
   body .main_page .hdfc_loans_special {
-    padding: 3% 2% 3% 2%;
+    padding: 2% 20% 2% 20%;
   }
   body .main_page .hdfc_loans_special h2 {
-    font-size: 4vh;
+    font-size: 3vw;
+  }
+  body .main_page .hdfc_loans_special .hdfc_loans_special_features {
+    padding: 0 6% 0 6%;
   }
   body .main_page .hdfc_loans_special .hdfc_loans_special_features ul li h5 {
-    font-size: 2.5vh;
+    font-size: 1.2vw;
     padding: 0;
-    margin-bottom: 0;
+    margin: 2% 0 -1.5% 0;
   }
   body .main_page .hdfc_loans_special .hdfc_loans_special_features ul li p {
-    padding: 0 3% 0 3%;
-    font-size: 2.5vh;
+    padding: 0 7% 0 7%;
+    font-size: 1.2vw;
   }
   body .main_page .hdfc_faqs {
     display: block;
+    padding: 2% 23% 2% 23%;
   }
   body .main_page .hdfc_faqs h2 {
-    font-size: 4vh;
+    font-size: 3vw;
   }
   body .main_page .hdfc_faqs ul li div h4 {
-    font-size: 2.5vh;
+    font-size: 1.3vw;
     padding: 3%;
   }
   body .main_page .hdfc_faqs ul li div span {
     margin-left: 2vw;
     margin-right: 2vw;
-    font-size: 3.5vh;
+    font-size: 2vw;
   }
   body .main_page .hdfc_faqs ul li p {
     padding: 5% 2% 5% 2%;
@@ -880,6 +937,7 @@ body .main_page .hdfc_faqs ul li p {
     font-weight: bold;
   }
   body .main_page header .hdfc_menu {
+    background: #dddddd;
     display: none;
     position: absolute;
     top: 7vh;
